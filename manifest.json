@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "DevDesk Pro: Service Desk Automation & Web Suite",
+  "version": "5.1.0",
+  "description": "AutoDesk Ticket Closer, QueueMetrics Scraper, Telviva Unlocker, and Web Utilities HUD.",
+  "permissions": [
+    "sidePanel",
+    "storage",
+    "activeTab",
+    "scripting",
+    "tabs"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "action": {
+    "default_title": "Open DevDesk Panel"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
