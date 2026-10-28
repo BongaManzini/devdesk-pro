@@ -11,7 +11,7 @@
     <!-- Header Controls -->
     <header class="app-header">
       <div class="brand">
-        <span class="brand-icon">⚡</span>
+        <span class="brand-icon"></span>
         <h1>DevDesk <span>Pro</span></h1>
       </div>
       <div class="header-status">
@@ -23,16 +23,16 @@
     <!-- Tabbed Navigation Bar -->
     <nav class="tab-bar">
       <button class="tab-btn active" data-tab="tab-automation">
-        <span class="tab-icon">🤖</span> Auto
+        <span class="tab-icon"></span> Auto
       </button>
       <button class="tab-btn" data-tab="tab-selectors">
-        <span class="tab-icon">🎯</span> DOM
+        <span class="tab-icon"></span> DOM
       </button>
       <button class="tab-btn" data-tab="tab-security">
-        <span class="tab-icon">🛡️</span> Security
+        <span class="tab-icon">️</span> Security
       </button>
       <button class="tab-btn" data-tab="tab-ui">
-        <span class="tab-icon">🎨</span> UI/UX
+        <span class="tab-icon"></span> UI/UX
       </button>
     </nav>
 
@@ -45,10 +45,10 @@
           <h3>Service Desk Macro Engine</h3>
           <p class="section-desc">Record, manage, and play automated sequence loops across ticketing tables.</p>
           <div class="button-grid">
-            <button id="btn-record-macro" class="btn btn-primary">⏺️ Record Macro</button>
-            <button id="btn-stop-macro" class="btn btn-danger">⏹️ Stop</button>
+            <button id="btn-record-macro" class="btn btn-primary">️ Record Macro</button>
+            <button id="btn-stop-macro" class="btn btn-danger">️ Stop</button>
             <button id="btn-run-macro" class="btn btn-success">▶️ Run Sequence</button>
-            <button id="btn-clear-macro" class="btn btn-secondary">🗑️ Clear Steps</button>
+            <button id="btn-clear-macro" class="btn btn-secondary">️ Clear Steps</button>
           </div>
         </div>
 
@@ -56,8 +56,8 @@
           <h3>QueueMetrics & Table Scraper</h3>
           <p class="section-desc">Extract rows and handle auto-paging via DOM anchors.</p>
           <div class="button-grid">
-            <button id="btn-lock-table" class="btn btn-outline">🎯 Lock Table</button>
-            <button id="btn-lock-next" class="btn btn-outline">🎯 Lock Next Btn</button>
+            <button id="btn-lock-table" class="btn btn-outline"> Lock Table</button>
+            <button id="btn-lock-next" class="btn btn-outline"> Lock Next Btn</button>
           </div>
           <div class="form-row">
             <label for="scrape-delay">Paging Interval (s):</label>
@@ -67,12 +67,12 @@
             <input type="checkbox" id="chk-agent-audit" checked>
             <label for="chk-agent-audit">Audit Agent == Password</label>
           </div>
-          <button id="btn-execute-scrape" class="btn btn-accent">📊 Start Multi-Page Scrape</button>
+          <button id="btn-execute-scrape" class="btn btn-accent"> Start Multi-Page Scrape</button>
         </div>
 
         <div class="section-card">
           <h3>Telviva Unlocker</h3>
-          <button id="btn-run-unlocker" class="btn btn-warning">🔓 Run Account Unlocker Loop</button>
+          <button id="btn-run-unlocker" class="btn btn-warning"> Run Account Unlocker Loop</button>
         </div>
       </section>
 
@@ -81,7 +81,7 @@
         <div class="section-card">
           <h3>Selector Generator</h3>
           <p class="section-desc">Evaluates target element stability and generates fallback selectors.</p>
-          <button id="btn-inspect-element" class="btn btn-primary">🔍 Inspect Target Element</button>
+          <button id="btn-inspect-element" class="btn btn-primary"> Inspect Target Element</button>
           <div class="output-block">
             <label>Primary Selector:</label>
             <input type="text" id="out-primary-selector" readonly placeholder="No element selected">
@@ -93,7 +93,7 @@
         <div class="section-card">
           <h3>Scraping Blueprint Generator</h3>
           <p class="section-desc">Pulls HTML container structure and builds Python/BS4 parser boilerplate.</p>
-          <button id="btn-generate-blueprint" class="btn btn-secondary">📜 Generate Python Parser</button>
+          <button id="btn-generate-blueprint" class="btn btn-secondary"> Generate Python Parser</button>
           <div class="output-block">
             <textarea id="out-blueprint-code" readonly placeholder="# Python BeautifulSoup4 code will output here..."></textarea>
           </div>
@@ -105,7 +105,7 @@
         <div class="section-card">
           <h3>XSS Surface Analyzer & Sanitizer</h3>
           <p class="section-desc">Scans the active document or input string for unsafe inline handlers and protocols.</p>
-          <button id="btn-audit-xss" class="btn btn-danger">🛡️ Audit Page XSS Vectors</button>
+          <button id="btn-audit-xss" class="btn btn-danger">️ Audit Page XSS Vectors</button>
           <div class="output-block">
             <textarea id="out-xss-results" readonly placeholder="Audit findings and DOMPurify recommendations..."></textarea>
           </div>
@@ -114,7 +114,7 @@
         <div class="section-card">
           <h3>Accessibility (a11y) Inspector</h3>
           <p class="section-desc">Checks WCAG 2.1 AA compliance across images, headings, and ARIA tags.</p>
-          <button id="btn-audit-a11y" class="btn btn-warning">♿ Run Accessibility Scan</button>
+          <button id="btn-audit-a11y" class="btn btn-warning"> Run Accessibility Scan</button>
           <div class="output-block">
             <div id="out-a11y-summary" class="metric-display">
               <div class="metric"><span id="a11y-score">--</span><label>Score</label></div>
@@ -130,7 +130,7 @@
         <div class="section-card">
           <h3>HTML to React / Tailwind Transpiler</h3>
           <p class="section-desc">Refactors selected page DOM nodes into styled React components.</p>
-          <button id="btn-transpile-ui" class="btn btn-primary">⚛️ Transpile Selected Component</button>
+          <button id="btn-transpile-ui" class="btn btn-primary">️ Transpile Selected Component</button>
           <div class="output-block">
             <textarea id="out-react-code" readonly placeholder="// Transpiled JSX component output..."></textarea>
           </div>
@@ -139,7 +139,7 @@
         <div class="section-card">
           <h3>Email HTML Transpiler</h3>
           <p class="section-desc">Converts modern layouts to table-nested legacy HTML for Outlook compatibility.</p>
-          <button id="btn-transpile-email" class="btn btn-secondary">✉️ Transpile to Email HTML</button>
+          <button id="btn-transpile-email" class="btn btn-secondary">️ Transpile to Email HTML</button>
           <div class="output-block">
             <textarea id="out-email-code" readonly placeholder="<!-- Legacy Table-based HTML -->"></textarea>
           </div>
@@ -148,7 +148,7 @@
         <div class="section-card">
           <h3>DOM Depth & Performance Optimizer</h3>
           <p class="section-desc">Detects deeply nested wrapper divs and calculates rendering node metrics.</p>
-          <button id="btn-analyze-dom" class="btn btn-accent">⚡ Analyze DOM Performance</button>
+          <button id="btn-analyze-dom" class="btn btn-accent"> Analyze DOM Performance</button>
           <div class="output-block">
             <div id="out-dom-metrics" class="metric-display">
               <div class="metric"><span id="dom-depth">0</span><label>Max Depth</label></div>

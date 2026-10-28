@@ -6,34 +6,34 @@
 
 ## Features
 
-### 🤖 Workflow Automation Engine
+### Workflow Automation Engine
 - **Macro Recorder** – Record click sequences on any page and replay them as automated loops across ticketing tables
 - **Auto Ticket Closer** – Execute multi-step ticket-closing sequences without manual interaction
 - **Smart Selector Generation** – Automatically generates stable CSS selectors (`id`, `data-testid`, `aria-label`, nth-of-type path) for recorded elements
 
-### 📊 QueueMetrics & Table Scraper
+### QueueMetrics & Table Scraper
 - **Multi-page DOM scraping** with configurable paging intervals
 - Lock any on-page `<table>` and "Next" button as DOM anchors for automated pagination
 - Optional **Agent Audit** mode (flags rows where Agent name matches password field)
 - Outputs a ready-to-use **Python / BeautifulSoup4 parser blueprint** from the live table structure
 
-### 🔓 Telviva Account Unlocker
+### Telviva Account Unlocker
 - Runs a continuous **unlock loop** to clear locked Telviva agent accounts without navigating away from your current workflow
 
-### 🎯 DOM & Selector Tools
+### DOM & Selector Tools
 - **Element Inspector** – Click any element to instantly generate its primary CSS selector plus XPath/class fallbacks
 - **Scraping Blueprint Generator** – Produces Python BS4 boilerplate from the first `<table>` found on the active page
 
-### 🛡️ Security Auditor
+### ️ Security Auditor
 - **XSS Surface Analyzer** – Scans the live DOM for inline event handlers (`onclick`, `onerror`, `onload`) and `eval()` calls
 - **Accessibility (a11y) Inspector** – Checks WCAG 2.1 AA compliance: missing `alt` attributes, unlabeled inputs, and ARIA coverage; produces a 0–100 score
 
-### 🎨 UI / UX Synthesizers
+### UI / UX Synthesizers
 - **HTML → React/Tailwind Transpiler** – Converts a selected DOM node into a JSX component scaffold
 - **Email HTML Transpiler** – Wraps modern layouts in Outlook-compatible nested-table HTML
 - **DOM Performance Analyzer** – Reports maximum nesting depth and total node count to identify render bottlenecks
 
-### ⚡ Side Panel HUD
+### Side Panel HUD
 - Persistent Chrome Side Panel UI — stays open while you navigate between tabs
 - Tabbed navigation (Auto · DOM · Security · UI/UX)
 - Live **Execution Log** console drawer with status indicators
@@ -80,27 +80,27 @@
 ### Opening the Panel
 Click the **DevDesk Pro** toolbar icon — the Chrome Side Panel will open automatically.
 
-### Automation Tab (`🤖 Auto`)
+### Automation Tab (` Auto`)
 | Action | How |
 |---|---|
-| Record a macro | Click **⏺️ Record Macro**, perform clicks on the page, click **⏹️ Stop** |
+| Record a macro | Click **️ Record Macro**, perform clicks on the page, click **️ Stop** |
 | Replay the macro | Click **▶️ Run Sequence** |
-| Scrape a table | Click **🎯 Lock Table** on a page with a `<table>`, set your paging interval, click **📊 Start Multi-Page Scrape** |
-| Unlock Telviva accounts | Navigate to the Telviva admin page, click **🔓 Run Account Unlocker Loop** |
+| Scrape a table | Click ** Lock Table** on a page with a `<table>`, set your paging interval, click ** Start Multi-Page Scrape** |
+| Unlock Telviva accounts | Navigate to the Telviva admin page, click ** Run Account Unlocker Loop** |
 
-### DOM Tab (`🎯 DOM`)
-1. Click **🔍 Inspect Target Element**, then click any element on the page.
+### DOM Tab (` DOM`)
+1. Click ** Inspect Target Element**, then click any element on the page.
 2. The primary CSS selector and XPath/class fallbacks appear in the output fields.
-3. Click **📜 Generate Python Parser** on any page with a table to get a ready-to-run BS4 script.
+3. Click ** Generate Python Parser** on any page with a table to get a ready-to-run BS4 script.
 
-### Security Tab (`🛡️ Security`)
-- **🛡️ Audit Page XSS Vectors** – scans the current page and lists risky inline handlers.
-- **♿ Run Accessibility Scan** – returns a WCAG compliance score and a list of failures.
+### Security Tab (`️ Security`)
+- **️ Audit Page XSS Vectors** – scans the current page and lists risky inline handlers.
+- ** Run Accessibility Scan** – returns a WCAG compliance score and a list of failures.
 
-### UI/UX Tab (`🎨 UI/UX`)
-- **⚛️ Transpile Selected Component** – outputs a JSX scaffold of the page's main container.
-- **✉️ Transpile to Email HTML** – generates Outlook-safe table-based HTML.
-- **⚡ Analyze DOM Performance** – displays max nesting depth and total node count.
+### UI/UX Tab (` UI/UX`)
+- **️ Transpile Selected Component** – outputs a JSX scaffold of the page's main container.
+- **️ Transpile to Email HTML** – generates Outlook-safe table-based HTML.
+- ** Analyze DOM Performance** – displays max nesting depth and total node count.
 
 ---
 
@@ -108,12 +108,12 @@ Click the **DevDesk Pro** toolbar icon — the Chrome Side Panel will open autom
 
 ```
 Service Desk Pro/
-├── manifest.json      # Extension manifest (MV3)
-├── background.js      # Service worker: side panel init & macro storage
-├── content.js         # Content script: recording engine, DOM modules
-├── sidepanel.html     # Side Panel UI shell
-├── sidepanel.js       # Side Panel controller logic
-└── styles.css         # UI styles
+├── manifest.json   # Extension manifest (MV3)
+├── background.js   # Service worker: side panel init & macro storage
+├── content.js     # Content script: recording engine, DOM modules
+├── sidepanel.html   # Side Panel UI shell
+├── sidepanel.js    # Side Panel controller logic
+└── styles.css     # UI styles
 ```
 
 ---
